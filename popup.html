@@ -12,6 +12,7 @@
         padding: 8px;
         padding-top: 0;
         font-family: "Lato", sans-serif;
+        background-color: rgb(251, 251, 255);
       }
       #sitesList {
         width: 100%;
@@ -19,18 +20,21 @@
         resize: none;
         border-radius: 0;
         border: 1px solid rgba(0, 0, 0, 0.235);
+        font-size: 18px;
+        font-family: "Lato", sans-serif;
       }
       button {
         margin-top: 16px;
         width: 100%;
         background-color: rgb(244, 41, 41);
         padding: 16px;
+        font-size: 20px;
         border: none;
         color: white;
         font-weight: bold;
         cursor: pointer;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-          rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        box-shadow: rgba(227, 78, 78, 0.1) 0px 4px 6px -1px,
+          rgba(223, 47, 47, 0.06) 0px 2px 4px -1px;
         transition: all 0.2s ease-in-out;
         &:hover {
           background-color: rgb(236, 20, 20);
@@ -39,12 +43,11 @@
     </style>
   </head>
   <body>
-    <h3>Add one site per row</h3>
-    <textarea id="sitesList" rows="10" placeholder="bbc.com"></textarea>
+    <h3>Add one per row</h3>
+    <textarea id="sitesList" rows="10" placeholder="example.com"></textarea>
     <button id="save">
-      <span id="message"> Block Sites </span>
+      <span id="message">You have blocked 0 websites</span>
     </button>
-
     <script src="popup.js"></script>
   </body>
 </html>

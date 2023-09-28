@@ -3,7 +3,7 @@
   "name": "Website Blocker",
   "version": "1.0",
   "description": "Block specified websites from being accessed",
-  "permissions": ["tabs", "storage", "activeTab"],
+  "permissions": ["tabs", "storage"],
   "background": {
     "service_worker": "background.js"
   },
